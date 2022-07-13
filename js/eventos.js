@@ -9,7 +9,7 @@ const crearContenido=(opciones)=>{
 
     <img src=${opciones.Imagen}/>
     <h2 class="nombre_alimento">${opciones.nombre}</h2>
-    <h2>${opciones.precio}</h2>
+    <h2 class="nombre_alimento">${opciones.precio}</h2>
                 
     </div>
     
