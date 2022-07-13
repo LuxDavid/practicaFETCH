@@ -50,7 +50,7 @@
         
         "nombre": "Choripan",
         "precio": 23,
-        "Imagen":"images/choripan.jpg"
+        "Imagen":"/images/choripan.jpg"
     }
 
 ]
