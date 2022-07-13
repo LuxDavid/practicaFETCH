@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded",()=>
     mostrarContenido(url)
     
     
-   },3000)
+   },1000)
     
 )

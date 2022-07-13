@@ -2,14 +2,18 @@
 
 const crearContenido=(opciones)=>{
 
-    const {nombre,precio,imagen}=opciones
+
     
-    return`<div class="platillo">
-    <img src="${imagen}>
-    <h2 class="nombre_alimento">${nombre}</h2>
-    <h2 class="nombre_alimento">${precio}</h2>
+    return`
+    <div class="platillo">
+
+    <img src=${opciones.Imagen}/>
+    <h2 class="nombre_alimento">${opciones.nombre}</h2>
+    <h2>${opciones.precio}</h2>
                 
-    </div>`
+    </div>
+    
+    `
     }
     
     const mostrarContenido=(url)=>{
