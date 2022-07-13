@@ -1,56 +1,56 @@
 [
     {   
-        "id":1,
         "nombre": "tacos",
         "precio": 12,
         "Imagen": "images/tacos_suadero.jpg"
     },
     {   
-        "id":2,
+        
         "nombre": "burritos",
         "precio": 22,
         "Imagen":"images/burritos3.jpg"
     },
     {   
-        "id":3,
+        
         "nombre": "Empanadas",
         "precio": 17,
         "Imagen": "images/Empanadas.jpg"
     },
     {   
-        "id":4,
+        
         "nombre": "Chilaquiles rojos",
         "precio": 28,
         "Imagen":"images/chilaquiles-rojos-paso-a-paso.jpg"
     },
     {   
-        "id":5,
+        
         "nombre": "Chilaquiles verdes",
         "precio": 30,
         "Imagen":"images/207-chilaquiles-verdes.jpg"
     },
     {   
-        "id":6,
+       
         "nombre": "Huevos revueltos",
         "precio": 19,
         "Imagen": "images/huevos.jpg"
     },
     {   
-        "id":7,
+      
         "nombre": "Emparedado de atun",
         "precio": 26,
         "Imagen":"images/emparedado.jpg"
     },
     {   
-        "id":8,
+        
         "nombre": "Arroz",
         "precio": 14,
         "Imagen":"images/arroz.jpg"
     },
     {   
-        "id":9,
+        
         "nombre": "Choripan",
         "precio": 23,
         "Imagen":"images/choripan.jpg"
     }
+
 ]
