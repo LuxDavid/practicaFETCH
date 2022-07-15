@@ -51,6 +51,18 @@
         "nombre": "Choripan",
         "precio": 23,
         "Imagen":"images/choripan.jpg"
+    },
+    {   
+        
+        "nombre": "Choripan",
+        "precio": 23,
+        "Imagen":"images/choripan.jpg"
+    },
+    {   
+        
+        "nombre": "Choripan",
+        "precio": 23,
+        "Imagen":"images/choripan.jpg"
     }
 
 ]
