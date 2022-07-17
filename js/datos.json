@@ -54,15 +54,69 @@
     },
     {   
         
-        "nombre": "Choripan",
-        "precio": 23,
-        "Imagen":"images/choripan.jpg"
+        "nombre": "Sopes",
+        "precio": 18,
+        "Imagen":"images/sopes.jpg"
     },
     {   
         
-        "nombre": "Choripan",
-        "precio": 23,
-        "Imagen":"images/choripan.jpg"
+        "nombre": "Tacos de birria",
+        "precio": 19,
+        "Imagen":"images/tacos_deBirria.jpg"
+    },
+    {   
+        
+        "nombre": "Tamales",
+        "precio": 13,
+        "Imagen":"images/tamales.jpg"
+    },
+    {   
+        
+        "nombre": "Chile en nogada",
+        "precio": 48,
+        "Imagen":"images/chile_nogada.jpg"
+    },
+    {   
+        
+        "nombre": "Gringa con chorizo",
+        "precio": 20,
+        "Imagen":"images/gringa.jpg"
+    },
+    {   
+        
+        "nombre": "Quesadilla",
+        "precio": 8,
+        "Imagen":"images/quesadillas.jpg" 
+    },
+    {   
+        
+        "nombre": "Pozole",
+        "precio": 33,
+        "Imagen":"images/pozole.jpg"
+    },
+    {   
+        
+        "nombre": "Nachos",
+        "precio": 21,
+        "Imagen":"images/nachos.jpg"
+    },
+    {   
+        
+        "nombre": "Flautas de carne",
+        "precio": 27,
+        "Imagen":"images/comida-mex.jpg"
+    },
+    {   
+        
+        "nombre": "Tarta de chocolate",
+        "precio": 29,
+        "Imagen":"images/tarta_chocolate.jpg"
+    },
+    {   
+        
+        "nombre": "Helado de chocolate",
+        "precio": 22,
+        "Imagen":"images/helado_chocolate.jpg"
     }
 
 ]

@@ -1,52 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>carrito</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordenar comida</title>
+  <link rel="stylesheet" href="css/styles.css">
+<!----------------------------Fuentes importadas------------------------------------------------------------------>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+<!------------------------Scripts----------------------------------------------------------------------------------->
+
+  <script defer src="js/variables.js"></script>
+  <script src="js/funcarrito.js"></script>
+
+
+
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+
+<!---------------------------------------------------SweetAlert------------------------------------------------------------------------>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
     
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
+<div id="contenedor">
+
+    <!---------------Inicio de la cabecera---------------------------->
+    <header id="header">
+
+      <div class="cabecera__header">
+
+      <h1 class="header__titulo">CARRITO</h1>
+
       </div>
-    </div>
+
+
+  <!--------------Inicio de la barra de navegacion------------------->
+
+  <nav id="menu">
+
+
+      <ul class="elementos__menu">
+
+          <li class="menu__item">
+
+              <a class="menu__link menu__link--contacto" href="index.html">Inicio</a>
+
+          </li>
+
+          <li class="menu__item">
+
+              <a class="menu__link menu__link--ubicacion" href="carrito.html">Carrrito</a>
+
+          </li>
+
+
+
+      </ul>
   </nav>
 
+  <!-------------------Fin de la barra de navegacion-------------------------->
 
+      </header>
+
+<!--------------------------------------------CARRITO DE COMPRAS---------------------------------------------------->
+
+<main id="principal">
+
+<section id="historialCompras">
+
+  
+  <div class="historial">
+
+    <h3>Esta es su compra</h3>
+
+</div>
+
+  <ul class="list-group listaCompras">
+
+  </ul>
+
+  <div class="historial">
+
+    <h3>Total a pagar</h3>
+
+</div>
+
+<div class="pago">
+<h4 id="total"></h4>
+
+</div>
+<button type="button" class="concluirPago">PAGAR</button>
+
+</section>
+
+
+
+
+
+</main>
+
+</div>
 
 
 

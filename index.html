@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ordenar comida</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!--Fuentes importadas-->
+<!----------------------------Fuentes importadas------------------------------------------------------------------>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <!--Scripts-->
+<!------------------------Scripts----------------------------------------------------------------------------------->
 
-    <script src="js/eventos.js"></script>
     <script defer src="js/variables.js"></script>
+
+    <script defer src="js/eventos.js"></script>
+
     <script defer src="js/ejecucion.js"></script>
 
     <!--bootstrap-->
@@ -27,70 +29,57 @@
         crossorigin="anonymous"></script>
 
 
-    <!--SweetAlert-->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/dist/sweetalert2.all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/src/instanceMethods/_destroy.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/src/instanceMethods/close.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/src/instanceMethods/enable-disable-elements.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/src/instanceMethods/getInput.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/src/instanceMethods/hideLoading.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/src/instanceMethods/progress-steps.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/src/instanceMethods/update.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.20/src/instanceMethods/validation-message.js"></script>
+<!---------------------------------------------------SweetAlert------------------------------------------------------------------------>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="sweetalert2.all.min.js"></script>
-    <script src="sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2.min.css"> -->
+
 
 </head>
 
 <body>
 
-    <header>
-            <!--INICIO DE LA BARRA DE NAVEGACION-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown link
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          
-<!------FIN DE LA BARRA DE NAVEGACION------------------------------->
-    </header>
+  <div id="contenedor">
 
-  
+    <!---------------Inicio de la cabecera---------------------------->
+    <header id="header">
+
+      <div class="cabecera__header">
+
+      <h1 class="header__titulo">Nuestro menu</h1>
+
+      </div>
 
 
-    <h1 id="titulo1">Incorporando librerias</h1>
-    <h2>Alumno: Diaz Tabares Brayan David</h2>
+  <!--------------Inicio de la barra de navegacion------------------->
+
+  <nav id="menu">
 
 
-    <!---------------------------------INICIO CONTENIDO PRINCIPAL---------------------------------------------------------------------------------------->
+      <ul class="elementos__menu">
+
+          <li class="menu__item">
+
+              <a class="menu__link" href="index.html">Inicio</a>
+
+          </li>
+
+          <li class="menu__item">
+
+              <a class="menu__link" href="carrito.html">Carrrito</a>
+
+          </li>
+
+
+
+      </ul>
+  </nav>
+
+  <!-------------------Fin de la barra de navegacion-------------------------->
+
+      </header>
+
+  <!-----------------------Fin de la cabecera----------------------------------->
+
+<!----------------------------------------------INICIO CONTENIDO PRINCIPAL---------------------------------------------------------------------------------------->
 
     <main id="principal">
 
@@ -102,9 +91,10 @@
 
         </section>
 
-        <!---------------------------------FIN CONTENIDO PRINCIPAL---------------------------------------------------------------------------------------->
+<!-----------------------------------------------------FIN CONTENIDO PRINCIPAL---------------------------------------------------------------------------------------->
 
-        <!---------------------Inicio de la barra lateral----------------------------------->
+
+<!----------------------------------------------------Inicio de la barra lateral-------------------------------------------------------------------------------------->
 
         <aside id="lateral">
 
@@ -153,11 +143,10 @@
 
         </aside>
 
-<!--------------FIN DE LA BARRA LATERAL--------------------------->
-
+<!-----------------------------------------------------------------------FIN DE LA BARRA LATERAL---------------------------------------------------->
 
     </main>
-
+  </div>
 
 
 </body>
