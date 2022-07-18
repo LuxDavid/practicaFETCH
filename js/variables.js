@@ -11,11 +11,7 @@ let correoUsuario="";
 
 let claveUsuario="";
 
-const opciones=document.getElementsByClassName("platillo");
-
 const carrito = [];
-
-const nombres=document.getElementsByClassName("nombre_alimento");
 
 const cliente=document.getElementById("usuario");
 
@@ -33,3 +29,14 @@ const total=document.querySelector("#total");
 
 const pagar=document.querySelector(".concluirPago")
 
+const platillos=document.getElementsByClassName("platillo");
+
+const nombres=document.getElementsByClassName("nombre_alimento");
+
+const precios=document.getElementsByClassName("precio_alimento")
+
+const sesionActiva=document.getElementById("sesionIniciada");
+
+// const producto5=new Ordenes("lonche","20")
+
+const pedido=[nombres, precios];

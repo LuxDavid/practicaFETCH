@@ -2,8 +2,6 @@
 
 const crearContenido=(opciones)=>{
 
-
-    
     return`
     <div class="platillo">
 
@@ -16,10 +14,12 @@ const crearContenido=(opciones)=>{
     `
     }
     
+   
+
     const mostrarContenido=(url)=>{
     
-    
     let opciones=""
+   
     fetch(url)
     .then((response)=>response.json())
     .then((data)=>{
@@ -29,15 +29,35 @@ const crearContenido=(opciones)=>{
     contenedor.innerHTML=opciones;
     }
     
-    })
+    }).then(()=>eventos())
     .catch((error)=>console.log("Algo salio mal"))
-    
+
+function eventos(){
+
+    for(const comida of platillos){
+
+        comida.addEventListener("click",()=>{
+
+        comida.style.background="black";
+        notificacion("agregado alcarrito","green");
+        agregarCarrito();
+
+        setTimeout(()=>{
+        comida.style.background="white"
+        },500)
+
+        })
     }
 
-// //----------------------------------------------------VERIFICACION Y GUARADO DE DATOS DEL FORMULARIO-------------------------------------------------------------------------------
+}
+
+}
+
+
+//----------------------------------------------------VERIFICACION Y GUARADO DE DATOS DEL FORMULARIO------------------------------------------------------------------
 
 function sesionUsuario(){
-    // debugger
+
 
 const secion={
 correo:cliente.value,
@@ -49,14 +69,16 @@ let datosAlmacenados=JSON.stringify(secion)
 
 localStorage.setItem("user", datosAlmacenados);
 
+
 }
 
 const datosStorage=()=>{
 
     const infoSesion=JSON.parse(localStorage.getItem("user"));
 
-    usuario.value=infoSesion.correo
+    cliente.value=infoSesion.correo
     clave.value=infoSesion.contraseña
+    sesionActiva.innerText=infoSesion.correo;
     
 }
 
@@ -94,7 +116,6 @@ recuperarInformacion();
     showConfirmButton:false,
     toast:true,
     timer:1000,
-    timeProgressBar:true,
     background:color || "gray",
     color:"white"
     })
@@ -108,7 +129,7 @@ recuperarInformacion();
             title: 'Iniciando sesion',
             showConfirmButton: false,
             timer: 3000,
-            background:"blue",
+            background:"black",
             color:"white"
           }).then(()=>{
          
@@ -125,7 +146,7 @@ recuperarInformacion();
     
     }).then(()=>{ 
     barra.innerHTML=''
-     barra.style.background="white"})
+     barra.style.background="#ff642c"})
     
     }
     
@@ -141,3 +162,5 @@ recuperarInformacion();
         });
         
         
+
+      
